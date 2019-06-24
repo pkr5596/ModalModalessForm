@@ -33,15 +33,15 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.파일ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.끝내기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.창띄우기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.도움말ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.이프로그램은ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modalessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.이프로그램은ModalessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusTitle = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusMessage = new System.Windows.Forms.ToolStripStatusLabel();
+            this.창띄우기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modalessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.이프로그램은ModalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -89,27 +89,25 @@
             // 끝내기ToolStripMenuItem
             // 
             this.끝내기ToolStripMenuItem.Name = "끝내기ToolStripMenuItem";
-            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.끝내기ToolStripMenuItem.Text = "끝내기";
-            // 
-            // 창띄우기ToolStripMenuItem
-            // 
-            this.창띄우기ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.modalToolStripMenuItem,
-            this.modalessToolStripMenuItem});
-            this.창띄우기ToolStripMenuItem.Name = "창띄우기ToolStripMenuItem";
-            this.창띄우기ToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.창띄우기ToolStripMenuItem.Text = "창 띄우기";
-            this.창띄우기ToolStripMenuItem.Click += new System.EventHandler(this.창띄우기ToolStripMenuItem_Click);
+            this.끝내기ToolStripMenuItem.Click += new System.EventHandler(this.끝내기ToolStripMenuItem_Click);
             // 
             // 도움말ToolStripMenuItem
             // 
             this.도움말ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.이프로그램은ToolStripMenuItem,
+            this.이프로그램은ModalToolStripMenuItem,
             this.이프로그램은ModalessToolStripMenuItem});
             this.도움말ToolStripMenuItem.Name = "도움말ToolStripMenuItem";
             this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.도움말ToolStripMenuItem.Text = "도움말";
+            // 
+            // 이프로그램은ModalessToolStripMenuItem
+            // 
+            this.이프로그램은ModalessToolStripMenuItem.Name = "이프로그램은ModalessToolStripMenuItem";
+            this.이프로그램은ModalessToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.이프로그램은ModalessToolStripMenuItem.Text = "이 프로그램은..(Modaless)";
+            this.이프로그램은ModalessToolStripMenuItem.Click += new System.EventHandler(this.이프로그램은ModalessToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
@@ -123,31 +121,6 @@
             this.statusStrip1.TabIndex = 6;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // 이프로그램은ToolStripMenuItem
-            // 
-            this.이프로그램은ToolStripMenuItem.Name = "이프로그램은ToolStripMenuItem";
-            this.이프로그램은ToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
-            this.이프로그램은ToolStripMenuItem.Text = "이 프로그램은..(Modal)";
-            this.이프로그램은ToolStripMenuItem.Click += new System.EventHandler(this.이프로그램은ToolStripMenuItem_Click);
-            // 
-            // modalToolStripMenuItem
-            // 
-            this.modalToolStripMenuItem.Name = "modalToolStripMenuItem";
-            this.modalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.modalToolStripMenuItem.Text = "Modal";
-            // 
-            // modalessToolStripMenuItem
-            // 
-            this.modalessToolStripMenuItem.Name = "modalessToolStripMenuItem";
-            this.modalessToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.modalessToolStripMenuItem.Text = "Modaless";
-            // 
-            // 이프로그램은ModalessToolStripMenuItem
-            // 
-            this.이프로그램은ModalessToolStripMenuItem.Name = "이프로그램은ModalessToolStripMenuItem";
-            this.이프로그램은ModalessToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
-            this.이프로그램은ModalessToolStripMenuItem.Text = "이 프로그램은..(Modaless)";
-            // 
             // statusTitle
             // 
             this.statusTitle.Name = "statusTitle";
@@ -159,6 +132,36 @@
             this.statusMessage.Name = "statusMessage";
             this.statusMessage.Size = new System.Drawing.Size(12, 17);
             this.statusMessage.Text = "-";
+            // 
+            // 창띄우기ToolStripMenuItem
+            // 
+            this.창띄우기ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.modalToolStripMenuItem,
+            this.modalessToolStripMenuItem});
+            this.창띄우기ToolStripMenuItem.Name = "창띄우기ToolStripMenuItem";
+            this.창띄우기ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.창띄우기ToolStripMenuItem.Text = "창띄우기";
+            // 
+            // modalToolStripMenuItem
+            // 
+            this.modalToolStripMenuItem.Name = "modalToolStripMenuItem";
+            this.modalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modalToolStripMenuItem.Text = "Modal";
+            this.modalToolStripMenuItem.Click += new System.EventHandler(this.ModalToolStripMenuItem_Click);
+            // 
+            // modalessToolStripMenuItem
+            // 
+            this.modalessToolStripMenuItem.Name = "modalessToolStripMenuItem";
+            this.modalessToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modalessToolStripMenuItem.Text = "Modaless";
+            this.modalessToolStripMenuItem.Click += new System.EventHandler(this.ModalessToolStripMenuItem_Click);
+            // 
+            // 이프로그램은ModalToolStripMenuItem
+            // 
+            this.이프로그램은ModalToolStripMenuItem.Name = "이프로그램은ModalToolStripMenuItem";
+            this.이프로그램은ModalToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.이프로그램은ModalToolStripMenuItem.Text = "이 프로그램은..(Modal)";
+            this.이프로그램은ModalToolStripMenuItem.Click += new System.EventHandler(this.이프로그램은ModalToolStripMenuItem_Click);
             // 
             // FormMain
             // 
@@ -192,14 +195,14 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripMenuItem 파일ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 끝내기ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 창띄우기ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 도움말ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem modalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem modalessToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 이프로그램은ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 이프로그램은ModalessToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel statusTitle;
         private System.Windows.Forms.ToolStripStatusLabel statusMessage;
+        private System.Windows.Forms.ToolStripMenuItem 창띄우기ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modalessToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 이프로그램은ModalToolStripMenuItem;
     }
 }
 
